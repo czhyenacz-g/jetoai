@@ -204,15 +204,15 @@ Pro každou novou doménu se nastavuje přesměrování e-mailu přes **Zoho Mai
 
 ### Postup
 1. Přihlas se na [zoho.com/mail](https://www.zoho.com/mail/) (účet Hynek)
-2. Přidej doménu: Settings → Domains → Add Domain → zadej `DOMENA.cz`
+2. Přidej doménu: Settings → Domains → Add Domain → zadej `jetoai.cz`
 3. Ověř doménu přidáním TXT záznamu do DNS (Zoho zobrazí přesnou hodnotu)
 4. Nastav MX záznamy dle instrukcí Zoho (obvykle `mx.zoho.eu`)
-5. Vytvoř aliasy / přesměrování: Settings → Email Forwarding → přidej `info@DOMENA.cz` → přesměruj na `hynek@darbujan.cz`
+5. Vytvoř aliasy / přesměrování: Settings → Email Forwarding → přidej `info@jetoai.cz` → přesměruj na `redakce@sokujiciodhaleni.cz`
 
 ### Checklist pro e-mail
 - [ ] Doména přidána a ověřena v Zoho Mail
 - [ ] MX záznamy nastaveny v DNS
-- [ ] Přesměrování `info@DOMENA.cz → hynek@darbujan.cz` funguje
+- [ ] Přesměrování `info@jetoai.cz → redakce@sokujiciodhaleni.cz` funguje
 
 ---
 
