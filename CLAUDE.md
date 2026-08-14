@@ -224,6 +224,7 @@ Pro každou novou doménu se nastavuje přesměrování e-mailu přes **Zoho Mai
 - [ ] `npm run dev` funguje na localhost:3000
 - [ ] Git repo vytvořeno a pushnuté
 - [ ] Vercel nasadil — URL funguje
+- [ ] Vercel Analytics zapnutá (Vercel dashboard → projekt → Analytics → Enable)
 - [ ] OG image funguje: `https://DOMENA/api/og?title=Test`
 - [ ] E-mail přesměrování přes Zoho Mail nastaveno
 
