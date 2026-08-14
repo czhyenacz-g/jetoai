@@ -2,24 +2,24 @@ import { detectors } from "../lib/detectors";
 
 export function DetectorList() {
   return (
-    <div className="grid gap-4 sm:grid-cols-2">
+    <div className="grid gap-3 sm:grid-cols-2">
       {detectors.map((detector) => (
         <div
           key={detector.name}
-          className="flex flex-col gap-3 rounded-2xl border border-gray-700 bg-gray-800 p-6"
+          className="flex flex-col gap-2 rounded-lg border border-gray-200 bg-white p-4"
         >
           <div className="flex items-center justify-between">
-            <h3 className="font-bold">{detector.name}</h3>
-            <span className="text-xs uppercase tracking-wide text-gray-500">
-              externí služba
+            <h3 className="font-semibold text-gray-900">{detector.name}</h3>
+            <span className="text-[10px] font-medium uppercase tracking-wide text-gray-400">
+              externí
             </span>
           </div>
-          <p className="text-sm text-gray-400">{detector.description}</p>
+          <p className="text-sm text-gray-600">{detector.description}</p>
           <a
             href={detector.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto inline-flex items-center justify-center rounded-lg border border-amber-600 px-4 py-2 text-sm font-semibold text-amber-400 transition-colors hover:bg-amber-600 hover:text-gray-900"
+            className="mt-1 inline-flex items-center justify-center rounded-lg border border-green-600 px-3 py-1.5 text-sm font-semibold text-green-600 transition-colors hover:bg-green-600 hover:text-white"
           >
             {detector.cta} ↗
           </a>

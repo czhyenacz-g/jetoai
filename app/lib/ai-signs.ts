@@ -5,35 +5,35 @@ export type AiSign = {
 
 export const aiSigns: AiSign[] = [
   {
-    title: "Nelogické drobné detaily",
-    text: "Ruce, prsty, uši, šperky nebo drobné vzory mohou být mírně nesmyslné, i když na první pohled vypadají v pořádku.",
+    title: "Nelogické detaily",
+    text: "Prsty, uši, zuby, šperky nebo jiné drobnosti mohou působit nepřirozeně.",
   },
   {
-    title: "Problematické nápisy a symboly",
-    text: "Písmo na cedulích, oblečení nebo obalech bývá rozmazané, zdeformované nebo úplně nesmyslné.",
+    title: "Texty a symboly",
+    text: "Nápisy mohou obsahovat chyby, nesmysly nebo zvláštní znaky.",
   },
   {
-    title: "Neobvyklé odrazy",
-    text: "Odrazy v zrcadlech, skle nebo vodě neodpovídají tomu, co by měly odrážet.",
+    title: "Světlo a stíny",
+    text: "Osvětlení nemusí odpovídat scéně a stíny mohou být nesprávné.",
   },
   {
-    title: "Nesrovnalosti ve stínech a osvětlení",
-    text: "Stíny míří jiným směrem než hlavní zdroj světla, nebo scéna kombinuje víc nekonzistentních zdrojů světla.",
+    title: "Odrazy",
+    text: "Odrazy v oknech, vodě nebo zrcadlech mohou být nelogické.",
   },
   {
-    title: "Opakující se struktury",
-    text: "Vzory na tkaninách, dlažbě nebo listech se nepřirozeně opakují nebo do sebe splývají.",
+    title: "Opakující se vzory",
+    text: "Textury nebo objekty se mohou podezřele opakovat.",
   },
   {
-    title: "Podivné nebo rozmazané pozadí",
-    text: "Pozadí bývá vágní, geometricky nelogické, nebo se v něm objevují nesmyslné objekty.",
+    title: "Podivné pozadí",
+    text: "Pozadí může obsahovat rozmazané nebo nelogické prvky.",
   },
   {
-    title: "Nesmyslné předměty nebo jejich spojení",
-    text: "Předměty na scéně k sobě nepatří, nebo je jejich tvar či funkce zvláštně pozměněná.",
+    title: "Nesmyslné prvky",
+    text: "Objekty mohou být spojené způsobem, který nedává smysl.",
   },
   {
-    title: "Nesrovnalosti mezi částmi scény",
-    text: "Různé části obrázku působí, jako by byly z jiných fotografií — neodpovídá si perspektiva ani měřítko.",
+    title: "Nesrovnalosti",
+    text: "Části scény mohou mít rozdílnou perspektivu, proporce nebo styl.",
   },
 ];

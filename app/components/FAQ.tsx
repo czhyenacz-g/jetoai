@@ -1,3 +1,5 @@
+import { AdSlot } from "./AdSlot";
+
 const faqs = [
   {
     q: "Dokáže AI detektor spolehlivě poznat obrázek vytvořený AI?",
@@ -31,21 +33,26 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="px-4 py-12">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="mb-6 text-2xl font-bold">Časté otázky</h2>
-        <div className="space-y-3">
+    <section id="faq" className="scroll-mt-24 border-t border-gray-200 px-4 py-12">
+      <div className="mx-auto max-w-5xl">
+        <h2 className="mb-6 text-2xl font-bold text-gray-900">
+          Často kladené otázky
+        </h2>
+        <div className="grid gap-3 md:grid-cols-2">
           {faqs.map((item) => (
             <details
               key={item.q}
-              className="rounded-xl border border-gray-700 bg-gray-800 p-4"
+              className="rounded-lg border border-gray-200 bg-white p-4 open:bg-gray-50"
             >
-              <summary className="cursor-pointer font-semibold text-gray-100 marker:text-amber-400">
+              <summary className="cursor-pointer text-sm font-semibold text-gray-900 marker:text-green-600">
                 {item.q}
               </summary>
-              <p className="mt-2 text-sm text-gray-400">{item.a}</p>
+              <p className="mt-2 text-sm text-gray-600">{item.a}</p>
             </details>
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <AdSlot size="300x250" />
         </div>
       </div>
     </section>

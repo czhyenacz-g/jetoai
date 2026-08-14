@@ -1,60 +1,91 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
+import { HeroVisual } from "./components/HeroVisual";
 import { ToolCard } from "./components/ToolCard";
+import { AdSlot } from "./components/AdSlot";
 import { WarningBox } from "./components/WarningBox";
 import { EducationSection } from "./components/EducationSection";
 import { VerificationSteps } from "./components/VerificationSteps";
 import { DetectorList } from "./components/DetectorList";
 import { FactCheckSection } from "./components/FactCheckSection";
 import { FAQ } from "./components/FAQ";
-import { AdSlot } from "./components/AdSlot";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
-
-        <section className="px-4 pb-4">
-          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
-            <ToolCard
-              title="Je obrázek vytvořený AI?"
-              description="AI detektory mohou v obrázku hledat známky generování umělou inteligencí. Výsledek ale není důkaz a jednotlivé nástroje se mohou mýlit."
-              ctaLabel="Ověřit obrázek"
-              href="#ai-detektory"
-            />
-            <ToolCard
-              title="Je to pravda?"
-              description="Máte podezřelý příspěvek, zprávu nebo tvrzení? Ověřte jeho obsah odděleně od toho, zda byl použitý obrázek vytvořen pomocí AI."
-              ctaLabel="Ověřit tvrzení"
-              href="#fact-check"
-            />
+        <section className="px-4 pb-10 pt-14">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Je to <span className="text-green-600">AI</span>?
+              </h1>
+              <p className="mt-4 max-w-lg text-lg text-gray-600">
+                Narazili jste na podezřelý obrázek, příspěvek nebo tvrzení?
+                Pomůžeme vám zjistit, co lze ověřit a jak.
+              </p>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <ToolCard
+                  variant="primary"
+                  title="Je obrázek vytvořený AI?"
+                  description="AI detektory mohou v obrázku hledat známky generování umělou inteligencí. Výsledek ale není důkaz a jednotlivé nástroje se mohou mýlit."
+                  ctaLabel="Ověřit obrázek"
+                  href="#ai-detektory"
+                />
+                <ToolCard
+                  variant="secondary"
+                  title="Je to pravda?"
+                  description="Máte podezřelý příspěvek, zprávu nebo tvrzení? Ověřte jeho obsah odděleně od toho, zda byl použitý obrázek vytvořen pomocí AI."
+                  ctaLabel="Ověřit tvrzení"
+                  href="#fact-check"
+                />
+              </div>
+            </div>
+            <HeroVisual />
           </div>
         </section>
+
+        <div className="flex justify-center px-4 pb-10">
+          <AdSlot size="728x90" />
+        </div>
 
         <WarningBox />
 
-        <AdSlot id="homepage-after-warning" />
-
-        <EducationSection />
-        <VerificationSteps />
-
-        <section id="ai-detektory" className="px-4 py-12">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="mb-2 text-2xl font-bold">AI detektory</h2>
-            <p className="mb-6 max-w-2xl text-gray-400">
-              Nástroje níže jsou externí služby — po kliknutí opouštíte
-              JeToAI.cz a řídíte se podmínkami dané služby.
-            </p>
-            <DetectorList />
+        <section className="px-4 py-12">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-3">
+            <div className="space-y-12 lg:col-span-2">
+              <EducationSection />
+              <VerificationSteps />
+            </div>
+            <aside className="lg:col-span-1">
+              <div className="lg:sticky lg:top-24">
+                <AdSlot size="300x600" />
+              </div>
+            </aside>
           </div>
         </section>
 
-        <FactCheckSection />
+        <div className="flex justify-center px-4 pb-4">
+          <AdSlot size="728x90" />
+        </div>
 
-        <AdSlot id="homepage-before-faq" />
+        <section className="border-t border-gray-200 bg-gray-50 px-4 py-12">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
+            <div id="ai-detektory" className="scroll-mt-24">
+              <h2 className="mb-4 text-2xl font-bold text-gray-900">
+                Vyzkoušejte AI detektory
+              </h2>
+              <DetectorList />
+              <p className="mt-4 text-sm text-gray-500">
+                Odkazy vedou na externí služby. JeToAI.cz neukládá ani
+                nezpracovává vaše obrázky. Při nahrávání obrázků se řiďte
+                podmínkami jednotlivých služeb.
+              </p>
+            </div>
+            <FactCheckSection />
+          </div>
+        </section>
 
         <FAQ />
       </main>

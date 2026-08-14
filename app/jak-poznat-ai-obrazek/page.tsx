@@ -16,10 +16,10 @@ export default function JakPoznatAiObrazekPage() {
       <Header />
       <main className="px-4 py-12">
         <div className="mx-auto max-w-2xl">
-          <h1 className="mb-4 text-3xl font-bold">
+          <h1 className="mb-4 text-3xl font-bold text-gray-900">
             Jak poznat obrázek vytvořený AI?
           </h1>
-          <p className="mb-8 text-gray-400">
+          <p className="mb-8 text-gray-600">
             Moderní generátory obrázků jsou čím dál lepší, takže staré rady
             jako „spočítejte prsty“ už často nefungují. Přesto existují
             znaky, kterých si můžete všimnout — berte je ale jako indicie,
@@ -29,14 +29,16 @@ export default function JakPoznatAiObrazekPage() {
           <div className="mb-10 space-y-6">
             {aiSigns.map((sign) => (
               <div key={sign.title}>
-                <h2 className="mb-1 text-lg font-semibold">{sign.title}</h2>
-                <p className="text-sm text-gray-400">{sign.text}</p>
+                <h2 className="mb-1 text-lg font-semibold text-gray-900">
+                  {sign.title}
+                </h2>
+                <p className="text-sm text-gray-600">{sign.text}</p>
               </div>
             ))}
           </div>
 
-          <div className="mb-10 rounded-2xl border border-amber-600/40 bg-amber-950/20 p-6">
-            <p className="text-sm text-gray-300">
+          <div className="mb-10 rounded-xl border border-amber-200 bg-amber-50 p-6">
+            <p className="text-sm text-gray-700">
               Tyto znaky postupně přestávají být spolehlivé, protože se
               generátory zlepšují. Nejlepší výsledek dostanete kombinací
               vizuální kontroly, AI detektoru, ověření původu obrázku a
@@ -45,12 +47,12 @@ export default function JakPoznatAiObrazekPage() {
           </div>
 
           <div className="flex flex-wrap gap-4 text-sm font-semibold">
-            <Link href="/ai-detektory" className="text-amber-400 hover:underline">
+            <Link href="/ai-detektory" className="text-green-600 hover:underline">
               Vyzkoušet AI detektory →
             </Link>
             <Link
               href="/jak-overit-fotografii"
-              className="text-amber-400 hover:underline"
+              className="text-green-600 hover:underline"
             >
               Jak fotografii ověřit lépe →
             </Link>

@@ -16,8 +16,10 @@ export default function AiDetektoryPage() {
       <Header />
       <main className="px-4 py-12">
         <div className="mx-auto max-w-3xl">
-          <h1 className="mb-4 text-3xl font-bold">AI detektory obrázků</h1>
-          <p className="mb-8 text-gray-400">
+          <h1 className="mb-4 text-3xl font-bold text-gray-900">
+            AI detektory obrázků
+          </h1>
+          <p className="mb-8 text-gray-600">
             Níže najdete externí nástroje, které se pokouší rozpoznat, jestli
             byl obrázek vytvořený nebo upravený pomocí AI. Po kliknutí
             opouštíte JeToAI.cz — nahráváte obrázek přímo dané službě a
@@ -27,11 +29,11 @@ export default function AiDetektoryPage() {
 
           <DetectorList />
 
-          <div className="my-10 rounded-2xl border border-amber-600/40 bg-amber-950/20 p-6">
-            <h2 className="mb-2 font-semibold text-amber-400">
+          <div className="my-10 rounded-xl border border-amber-200 bg-amber-50 p-6">
+            <h2 className="mb-2 font-semibold text-amber-700">
               AI detekce je indicie, ne důkaz
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-700">
               Nízké AI skóre neznamená, že je fotografie pravá. Vysoké AI
               skóre samo o sobě není definitivní důkaz. Detektory mohou mít
               false positive i false negative výsledky a nový generátor
@@ -41,7 +43,7 @@ export default function AiDetektoryPage() {
 
           <Link
             href="/jak-poznat-ai-obrazek"
-            className="text-sm font-semibold text-amber-400 hover:underline"
+            className="text-sm font-semibold text-green-600 hover:underline"
           >
             Jak obrázek poznat i vizuálně →
           </Link>
