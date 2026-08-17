@@ -7,6 +7,7 @@ import { WarningBox } from "./components/WarningBox";
 import { EducationSection } from "./components/EducationSection";
 import { VerificationSteps } from "./components/VerificationSteps";
 import { DetectorList } from "./components/DetectorList";
+import { AiDetectorExample } from "./components/AiDetectorExample";
 import { FactCheckSection } from "./components/FactCheckSection";
 import { FAQ } from "./components/FAQ";
 
@@ -76,6 +77,7 @@ export default function Home() {
               <h2 className="mb-4 text-2xl font-bold text-gray-900">
                 Vyzkoušejte AI detektory
               </h2>
+              <AiDetectorExample />
               <DetectorList />
               <p className="mt-4 text-sm text-gray-500">
                 Odkazy vedou na externí služby. JeToAI.cz neukládá ani
