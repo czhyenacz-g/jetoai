@@ -48,8 +48,8 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="flex justify-center px-4 pb-10">
-          <AdSlot size="728x90" />
+        <div className="px-4 pb-10">
+          <AffiliateBanner id="dyson" variant="thin" className="mx-auto max-w-3xl" />
         </div>
 
         <WarningBox />
@@ -68,8 +68,8 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="flex justify-center px-4 pb-4">
-          <AdSlot size="728x90" />
+        <div className="px-4 pb-4">
+          <AffiliateBanner id="dyson" variant="thin" className="mx-auto max-w-3xl" />
         </div>
 
         <section className="border-t border-gray-200 bg-gray-50 px-4 py-12">
