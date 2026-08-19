@@ -1,5 +1,3 @@
-import { AdSlot } from "./AdSlot";
-
 const faqs = [
   {
     q: "Dokáže AI detektor spolehlivě poznat obrázek vytvořený AI?",
@@ -50,9 +48,6 @@ export function FAQ() {
               <p className="mt-2 text-sm text-gray-600">{item.a}</p>
             </details>
           ))}
-        </div>
-        <div className="mt-8 flex justify-center">
-          <AdSlot size="300x250" />
         </div>
       </div>
     </section>
