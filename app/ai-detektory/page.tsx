@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { DetectorList } from "../components/DetectorList";
+import { AffiliateBanner } from "../components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title: "AI detektory obrázků",
@@ -47,6 +48,10 @@ export default function AiDetektoryPage() {
           >
             Jak obrázek poznat i vizuálně →
           </Link>
+
+          <div className="mt-10">
+            <AffiliateBanner id="dyson" />
+          </div>
         </div>
       </main>
       <Footer />

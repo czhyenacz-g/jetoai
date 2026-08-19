@@ -10,6 +10,7 @@ import { DetectorList } from "./components/DetectorList";
 import { AiDetectorExample } from "./components/AiDetectorExample";
 import { FactCheckSection } from "./components/FactCheckSection";
 import { FAQ } from "./components/FAQ";
+import { AffiliateBanner } from "./components/AffiliateBanner";
 
 export default function Home() {
   return (
@@ -90,6 +91,12 @@ export default function Home() {
         </section>
 
         <FAQ />
+
+        <div className="px-4 py-10">
+          <div className="mx-auto max-w-3xl">
+            <AffiliateBanner id="dyson" />
+          </div>
+        </div>
       </main>
       <Footer />
     </>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import { AdSlot } from "../../components/AdSlot";
+import { AffiliateBanner } from "../../components/AffiliateBanner";
 import { getRevealItemBySlug } from "../../lib/reveals";
 
 const SITE_URL = "https://jetoai.cz";
@@ -110,8 +110,8 @@ export default async function RevealPage({
             </p>
           </section>
 
-          <div className="mt-8 flex justify-center">
-            <AdSlot size="300x250" />
+          <div className="mt-8">
+            <AffiliateBanner id="dyson" />
           </div>
 
           <p className="mt-10 text-sm">
