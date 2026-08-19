@@ -2,7 +2,6 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { HeroVisual } from "./components/HeroVisual";
 import { ToolCard } from "./components/ToolCard";
-import { AdSlot } from "./components/AdSlot";
 import { WarningBox } from "./components/WarningBox";
 import { EducationSection } from "./components/EducationSection";
 import { VerificationSteps } from "./components/VerificationSteps";
@@ -55,16 +54,9 @@ export default function Home() {
         <WarningBox />
 
         <section className="px-4 py-12">
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-3">
-            <div className="space-y-12 lg:col-span-2">
-              <EducationSection />
-              <VerificationSteps />
-            </div>
-            <aside className="lg:col-span-1">
-              <div className="lg:sticky lg:top-24">
-                <AdSlot size="300x600" />
-              </div>
-            </aside>
+          <div className="mx-auto max-w-3xl space-y-12">
+            <EducationSection />
+            <VerificationSteps />
           </div>
         </section>
 
