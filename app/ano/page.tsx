@@ -44,7 +44,7 @@ export default function AnoPage() {
         <AiVerdictHero
           word="ANO"
           subtitle="Je to AI."
-          explanation="To, co je s tímto odkazem sdílené, je vytvořené nebo upravené pomocí AI."
+          explanation="To, co je s tímto odkazem sdílené, je vytvořené nebo upravené pomocí AI. Tak tomu raději nevěř!"
         />
         <div className="w-full max-w-md px-4 pb-8">
           <AffiliateBanner id="dyson" />
