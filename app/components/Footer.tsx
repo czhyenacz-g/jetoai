@@ -61,6 +61,16 @@ export function Footer() {
                 Podmínky použití
               </Link>
             </li>
+            <li>
+              <a
+                href="https://www.facebook.com/jetoai.cz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Facebook
+              </a>
+            </li>
           </ul>
         </div>
       </div>
