@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
   },
   // Seznam Webmaster Tools — ověření vlastnictví domény.
-  other: { "seznam-wmt": "bfnf1fuff9SIJjg8vtp0QbzhxszMbM7V" },
+  other: { "seznam-wmt": "5q73B5HG2lxCM4uAXIye7zp9HGtgV86Q" },
 };
 
 export default function RootLayout({
