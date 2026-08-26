@@ -28,6 +28,8 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
+  // Seznam Webmaster Tools — ověření vlastnictví domény.
+  other: { "seznam-wmt": "bfnf1fuff9SIJjg8vtp0QbzhxszMbM7V" },
 };
 
 export default function RootLayout({
