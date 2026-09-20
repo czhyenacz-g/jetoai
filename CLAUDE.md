@@ -122,6 +122,8 @@ Soubory kde se placeholdery vyskytují:
 - `app/layout.tsx` — metadata (title, description, OG)
 - `app/page.tsx` — hlavní stránka
 - `app/api/og/route.tsx` — OG image
+- `app/sitemap.ts` — SITE_URL
+- `app/robots.ts` — sitemap URL
 - `package.json` — `"name"` pole
 
 ### 3. Inicializuj Git a pushnui na GitHub
@@ -167,6 +169,8 @@ npm run dev
 app/
   layout.tsx          # Root layout, metadata, analytics
   page.tsx            # Hlavní stránka
+  sitemap.ts          # /sitemap.xml
+  robots.ts           # /robots.txt (odkazuje na sitemap)
   globals.css         # Tailwind direktivy
   config/
     analytics.ts      # GoatCounter kód
@@ -226,6 +230,7 @@ Pro každou novou doménu se nastavuje přesměrování e-mailu přes **Zoho Mai
 - [ ] Vercel nasadil — URL funguje
 - [ ] Vercel Analytics zapnutá (Vercel dashboard → projekt → Analytics → Enable)
 - [ ] OG image funguje: `https://DOMENA/api/og?title=Test`
+- [ ] Sitemap funguje: `https://DOMENA/sitemap.xml` (a `/robots.txt` na ni odkazuje)
 - [ ] E-mail přesměrování přes Zoho Mail nastaveno
 
 ---
